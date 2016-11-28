@@ -24,6 +24,20 @@
                         <div ng-message="required" class="my-message">You must supply a last name.</div>
                     </div>
                 </md-input-container>
+                <md-input-container class="md-block">
+                    <label>User Name</label>
+                    <input type="text" name="user" ng-model="register.user" placeholder="User Name" required=""/>
+                    <div ng-messages="Form.last.$error" role="alert" multiple="">
+                        <div ng-message="required" class="my-message">You must supply a valid user name.</div>
+                    </div>
+                </md-input-container>
+                <md-input-container class="md-block">
+                    <label>Password</label>
+                    <input type="password" name="password" ng-model="register.password" placeholder="Password" required="" md-maxlength="15"/>
+                    <div ng-messages="Form.last.$error" role="alert" multiple="">
+                        <div ng-message="required" class="my-message">You must supply a valid password.</div>
+                    </div>
+                </md-input-container>
                 <div layout-gt-sm="row">
                     <md-button ng-disabled="!Form.$valid" ng-click="create()" class="md-raised md-primary">&nbsp Create Account
                         &nbsp
