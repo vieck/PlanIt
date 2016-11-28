@@ -5,6 +5,7 @@ angular.module('myApp', [
     'ngRoute',
     'ngMaterial',
     'myApp.login',
+    'myApp.register',
     'myApp.view2',
     'myApp.version'
 ]).config(['$locationProvider', '$routeProvider', function ($locationProvider, $routeProvider) {
